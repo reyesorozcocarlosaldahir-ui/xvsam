@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="theme-color"
+    content="#100b10">
+
+  <meta
+    name="description"
+    content="Invitación a los XV años de Maria Samyreth Jaramillo Orozco. Gala Charra Imperial. 28 de noviembre de 2026.">
+
+  <title>
+    Gala Charra Imperial | Maria Samyreth
+  </title>
+
+  <!-- TIPOGRAFÍAS ELEGANTES -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- HOJA DE ESTILOS -->
+
+  <link
+    rel="stylesheet"
+    href="css/style.css">
+
+  <!-- FUNCIONES JAVASCRIPT -->
+
+  <script
+    src="js/script.js"
+    defer>
+  </script>
+
+</head>
+
+<body class="bloqueado">
+
+  <!-- ==========================================
+       MÚSICA DE FONDO
+  ========================================== -->
+
+  <audio
+    id="musica"
+    loop
+    preload="none">
+
+    <source
+      src="assets/audio/mariachi.mp3"
+      type="audio/mpeg">
+
+  </audio>
+
+  <button
+    id="botonMusica"
+    class="control-musica"
+    type="button"
+    aria-label="Reproducir o pausar música"
+    hidden>
+    ♫
+  </button>
+
+  <!-- ==========================================
+       01. SOBRE DE BIENVENIDA
+  ========================================== -->
+
+  <div
+    id="bienvenida"
+    class="bienvenida">
+
+    <div
+      class="bienvenida-luz"
+      aria-hidden="true">
+    </div>
+
+    <div class="bienvenida-contenido">
+
+      <p class="microtitulo">
+        UNA INVITACIÓN MUY ESPECIAL
+      </p>
+
+      <h1 class="bienvenida-titulo">
+        Para ti, con cariño
+      </h1>
+
+      <div
+        class="separador"
+        aria-hidden="true">
+        ✦
+      </div>
+
+      <!-- SOBRE ANIMADO EN 3D -->
+
+      <button
+        id="abrirSobre"
+        class="sobre"
+        type="button"
+        aria-label="Abrir invitación de XV años">
+
+        <span class="sobre-fondo"></span>
+
+        <!-- ==================================
+             CARTA CON SILUETA DE QUINCEAÑERA
+        ================================== -->
+
+        <span class="carta">
+
+          <span class="carta-borde carta-con-silueta">
+
+            <img
+              src="assets/silueta-quinceanera.png"
+              class="silueta-sobre"
+              alt=""
+              aria-hidden="true">
+
+            <span class="nombre-sobre">
+              Maria Samyreth
+            </span>
+
+          </span>
+
+        </span>
+
+        <!-- PLIEGUES DEL SOBRE -->
+
+        <span class="sobre-frente"></span>
+
+        <span class="sobre-tapa"></span>
+
+        <!-- SELLO DE CERA -->
+
+        <span class="sello">
+          XV
+        </span>
+
+      </button>
+
+      <p class="instruccion">
+        TOCA EL SELLO PARA DESCUBRIR
+        TU INVITACIÓN
+      </p>
+
+      <p class="fecha-pequena">
+        28 · NOVIEMBRE · 2026
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- ==========================================
+       CONTENIDO DE LA INVITACIÓN
+  ========================================== -->
+
+  <main
+    id="invitacion"
+    hidden>
+
+    <!-- ==========================================
+         02. PORTADA IMPERIAL
+    ========================================== -->
+
+    <header
+      class="portada"
+      id="inicio">
+
+      <!-- ILUMINACIÓN CINEMATOGRÁFICA -->
+
+      <div
+        class="portada-luz"
+        aria-hidden="true">
+      </div>
+
+      <!-- MARCO DORADO -->
+
+      <div
+        class="marco-portada"
+        aria-hidden="true">
+      </div>
+
+      <!-- ORNAMENTOS CHARROS -->
+
+      <div
+        class="ornamento esquina-superior-izq"
+        aria-hidden="true">
+        ❦
+      </div>
+
+      <div
+        class="ornamento esquina-superior-der"
+        aria-hidden="true">
+        ❦
+      </div>
+
+      <div
+        class="ornamento esquina-inferior-izq"
+        aria-hidden="true">
+        ❦
+      </div>
+
+      <div
+        class="ornamento esquina-inferior-der"
+        aria-hidden="true">
+        ❦
+      </div>
+
+      <div class="portada-contenido">
+
+        <!-- TEXTOS PRINCIPALES -->
+
+        <div class="portada-texto">
+
+          <p class="microtitulo">
+            UN DÍA DE ELEGANCIA Y TRADICIÓN
+          </p>
+
+          <p class="portada-mis">
+            Mis
+          </p>
+
+          <h2 class="portada-xv">
+            XV
+          </h2>
+
+          <p class="portada-mis">
+            Años
+          </p>
+
+          <div
+            class="separador"
+            aria-hidden="true">
+            ✦
+          </div>
+
+          <h1 class="portada-nombre">
+            Maria Samyreth
+          </h1>
+
+          <p class="portada-apellidos">
+            JARAMILLO OROZCO
+          </p>
+
+          <p class="portada-fecha">
+            SÁBADO 28 DE NOVIEMBRE DE 2026
+          </p>
+
+          <a
+            href="#mensaje"
+            class="deslizar">
+
+            DESCUBRE LA CELEBRACIÓN
+
+            <span aria-hidden="true">
+              ↓
+            </span>
+
+          </a>
+
+        </div>
+
+        <!-- ==================================
+             SILUETA GRANDE DE LA PORTADA
+        ================================== -->
+
+        <div class="ilustracion">
+
+          <div
+            class="ilustracion-resplandor"
+            aria-hidden="true">
+          </div>
+
+          <img
+            id="imagenQuinceanera"
+            class="silueta-principal"
+          src="assets/silueta-quinceanera.png"
+            alt="Silueta de una quinceañera con vestido amplio y temática charra"
+            fetchpriority="high">
+
+          <!-- SE MUESTRA SI FALTA LA SILUETA -->
+
+          <div
+            id="ilustracionFallback"
+            class="ilustracion-fondo"
+            hidden>
+
+            <strong>
+              XV
+            </strong>
+
+            <p>
+              Maria Samyreth
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- ==========================================
+         03. MENSAJE ESPECIAL
+    ========================================== -->
+
+    <section
+      id="mensaje"
+      class="seccion mensaje">
+
+      <div class="contenedor revelar">
+
+        <p class="microtitulo">
+          CON EL CORAZÓN LLENO DE SUEÑOS
+        </p>
+
+        <h2 class="titulo-seccion">
+          Un día
+          <em>inolvidable</em>
+        </h2>
+
+        <div
+          class="separador"
+          aria-hidden="true">
+          ✦
+        </div>
+
+        <div class="mensaje-marco">
+
+          <p
+            class="simbolo-grande"
+            aria-hidden="true">
+            ❦
+          </p>
+
+          <p class="texto-elegante">
+            Entre música, sueños y tradiciones,
+            celebro mis raíces y el comienzo
+            de una nueva historia.
+          </p>
+
+          <p class="texto-elegante">
+            Tu presencia hará de mis XV años
+            un día inolvidable.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         04. PADRES Y PADRINOS
+    ========================================== -->
+
+    <section
+      id="familia"
+      class="seccion familia">
+
+      <div class="contenedor revelar">
+
+        <p class="microtitulo">
+          CON AMOR Y GRATITUD
+        </p>
+
+        <h2 class="titulo-seccion">
+          Mis padres
+          <em>y padrinos</em>
+        </h2>
+
+        <p class="texto-intro">
+          Con su cariño y bendición,
+          este día será aún más especial.
+        </p>
+
+        <div class="familia-grid">
+
+          <!-- PADRES -->
+
+          <article class="familia-tarjeta">
+
+            <div
+              class="tarjeta-decoracion"
+              aria-hidden="true">
+              ❦
+            </div>
+
+            <h3>
+              Mis padres
+            </h3>
+
+            <p>
+              Ana Laura Orozco
+            </p>
+
+            <span class="familia-y">
+              y
+            </span>
+
+            <p>
+              Samuel Orozco Alvarado
+            </p>
+
+          </article>
+
+          <!-- PADRINOS -->
+
+          <article class="familia-tarjeta">
+
+            <div
+              class="tarjeta-decoracion"
+              aria-hidden="true">
+              ❦
+            </div>
+
+            <h3>
+              Mis padrinos
+            </h3>
+
+            <p>
+              Nombre de la madrina
+            </p>
+
+            <span class="familia-y">
+              y
+            </span>
+
+            <p>
+              Nombre del padrino
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         05. FECHA Y CUENTA REGRESIVA
+    ========================================== -->
+
+    <section class="seccion fecha">
+
+      <div class="contenedor revelar">
+
+        <p class="microtitulo">
+          RESERVA ESTA FECHA
+        </p>
+
+        <h2 class="titulo-seccion">
+          El gran
+          <em>día</em>
+        </h2>
+
+        <div class="fecha-grande">
+
+          <span class="fecha-numero">
+            28
+          </span>
+
+          <div class="fecha-datos">
+
+            <span>
+              NOVIEMBRE
+            </span>
+
+            <strong>
+              2026
+            </strong>
+
+          </div>
+
+        </div>
+
+        <p class="fecha-localidad">
+          SÁBADO · TEJUPILCO, ESTADO DE MÉXICO
+        </p>
+
+        <div
+          class="separador"
+          aria-hidden="true">
+          ✦
+        </div>
+
+        <p class="microtitulo">
+          FALTAN PARA MI GRAN DÍA
+        </p>
+
+        <!-- CONTADOR -->
+
+        <div
+          id="contador"
+          class="contador"
+          role="timer"
+          aria-label="Cuenta regresiva para mis XV años">
+
+          <div>
+            <strong id="dias">00</strong>
+            <span>DÍAS</span>
+          </div>
+
+          <div>
+            <strong id="horas">00</strong>
+            <span>HORAS</span>
+          </div>
+
+          <div>
+            <strong id="minutos">00</strong>
+            <span>MINUTOS</span>
+          </div>
+
+          <div>
+            <strong id="segundos">00</strong>
+            <span>SEGUNDOS</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         06. CEREMONIA Y RECEPCIÓN
+    ========================================== -->
+
+    <section class="seccion ubicaciones">
+
+      <div class="contenedor">
+
+        <div class="revelar">
+
+          <p class="microtitulo">
+            ACOMPÁÑAME A CELEBRAR
+          </p>
+
+          <h2 class="titulo-seccion">
+            Los momentos
+            <em>especiales</em>
+          </h2>
+
+          <div
+            class="separador"
+            aria-hidden="true">
+            ✦
+          </div>
+
+        </div>
+
+        <div class="tarjetas">
+
+          <!-- CEREMONIA RELIGIOSA -->
+
+          <article class="tarjeta revelar">
+
+            <span
+              class="tarjeta-icono"
+              aria-hidden="true">
+              ✝
+            </span>
+
+            <p class="microtitulo">
+              PRIMER MOMENTO
+            </p>
+
+            <h3>
+              Ceremonia religiosa
+            </h3>
+
+            <div
+              class="separador"
+              aria-hidden="true">
+              ✦
+            </div>
+
+            <p class="tarjeta-lugar">
+              Capilla San Simón
+            </p>
+
+            <p class="tarjeta-hora">
+              1:00 p. m.
+            </p>
+
+            <p class="tarjeta-direccion">
+              Tejupilco, Estado de México
+            </p>
+
+            <a
+              class="boton"
+              href="https://www.google.com/maps/search/?api=1&amp;query=18.9156251%2C-100.1481808"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              VER UBICACIÓN
+
+            </a>
+
+          </article>
+
+          <!-- RECEPCIÓN -->
+
+          <article class="tarjeta revelar">
+
+            <span
+              class="tarjeta-icono"
+              aria-hidden="true">
+              ❖
+            </span>
+
+            <p class="microtitulo">
+              SEGUNDO MOMENTO
+            </p>
+
+            <h3>
+              Recepción
+            </h3>
+
+            <div
+              class="separador"
+              aria-hidden="true">
+              ✦
+            </div>
+
+            <p class="tarjeta-lugar">
+              Salón La Providencia
+            </p>
+
+            <p class="tarjeta-hora">
+              3:30 p. m.
+            </p>
+
+            <p class="tarjeta-direccion">
+              Tejupilco, Estado de México
+            </p>
+
+            <a
+              class="boton"
+              href="https://www.google.com/maps/search/?api=1&amp;query=18.8991981%2C-100.1251731"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              VER UBICACIÓN
+
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         07. LLUVIA DE SOBRES
+    ========================================== -->
+
+    <section class="seccion regalos">
+
+      <div class="contenedor revelar">
+
+        <div class="regalo-marco">
+
+          <span
+            class="regalo-icono"
+            aria-hidden="true">
+            ✉
+          </span>
+
+          <p class="microtitulo">
+            UN DETALLE ESPECIAL
+          </p>
+
+          <h2 class="titulo-seccion">
+            Lluvia de
+            <em>sobres</em>
+          </h2>
+
+          <div
+            class="separador"
+            aria-hidden="true">
+            ✦
+          </div>
+
+          <p class="texto-elegante">
+            Tu presencia es mi regalo más especial.
+            Si deseas obsequiarme un detalle,
+            tendremos lluvia de sobres.
+          </p>
+
+          <p class="texto-elegante">
+            Gracias por formar parte de este sueño.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         08. FORMULARIO DE CONFIRMACIÓN
+    ========================================== -->
+
+    <section
+      id="confirmar"
+      class="seccion confirmacion">
+
+      <div class="contenedor revelar">
+
+        <p class="microtitulo">
+          TU PRESENCIA HARÁ ESPECIAL ESTE DÍA
+        </p>
+
+        <h2 class="titulo-seccion">
+          Confirma
+          <em>tu asistencia</em>
+        </h2>
+
+        <div
+          class="separador"
+          aria-hidden="true">
+          ✦
+        </div>
+
+        <p class="confirmacion-texto">
+          Queremos preparar todo con cariño.
+          Indícanos cuántas personas asistirán.
+        </p>
+
+        <!-- FORMULARIO -->
+
+        <form
+          id="formularioAsistencia"
+          class="formulario-asistencia"
+          novalidate>
+
+          <!-- NOMBRE -->
+
+          <label for="nombreInvitado">
+            Nombre de quien confirma
+          </label>
+
+          <input
+            id="nombreInvitado"
+            name="nombre"
+            type="text"
+            placeholder="Escribe tu nombre completo"
+            maxlength="100"
+            autocomplete="name"
+            required>
+
+          <!-- RESPUESTA -->
+
+          <fieldset>
+
+            <legend>
+              ¿Asistirás a la celebración?
+            </legend>
+
+            <div class="opciones-asistencia">
+
+              <label>
+
+                <input
+                  type="radio"
+                  name="asistencia"
+                  value="si"
+                  checked>
+
+                Sí, asistiré
+
+              </label>
+
+              <label>
+
+                <input
+                  type="radio"
+                  name="asistencia"
+                  value="no">
+
+                No podré asistir
+
+              </label>
+
+            </div>
+
+          </fieldset>
+
+          <!-- CANTIDAD DE PERSONAS -->
+
+          <div
+            id="campoPersonas"
+            class="campo-personas">
+
+            <label for="cantidadPersonas">
+              Número total de personas que asistirán
+            </label>
+
+            <input
+              id="cantidadPersonas"
+              name="personas"
+              type="number"
+              placeholder="Ejemplo: 5"
+              min="1"
+              max="999"
+              step="1"
+              inputmode="numeric"
+              required>
+
+            <small>
+              Inclúyete en el total.
+              Escribe la cantidad de personas
+              que asistirán contigo.
+            </small>
+
+          </div>
+
+          <!-- TELÉFONO OPCIONAL -->
+
+          <label for="telefonoInvitado">
+            Teléfono (opcional)
+          </label>
+
+          <input
+            id="telefonoInvitado"
+            name="telefono"
+            type="tel"
+            maxlength="25"
+            placeholder="Tu teléfono de contacto"
+            autocomplete="tel">
+
+          <!-- ENVIAR -->
+
+          <button
+            id="enviarAsistencia"
+            class="boton boton-confirmacion"
+            type="submit">
+
+            CONFIRMAR ASISTENCIA
+
+          </button>
+
+          <!-- RESULTADO DEL ENVÍO -->
+
+          <p
+            id="estadoConfirmacion"
+            class="estado-confirmacion"
+            role="status"
+            aria-live="polite">
+          </p>
+
+        </form>
+
+        <p class="aviso-privacidad">
+          Los datos se utilizarán únicamente
+          para organizar la asistencia al evento.
+        </p>
+
+        <!-- DESPEDIDA -->
+
+        <div class="cierre-imperial">
+
+          <div
+            class="separador"
+            aria-hidden="true">
+            ✦
+          </div>
+
+          <p class="nombre-final">
+            Maria Samyreth
+          </p>
+
+          <p class="apellido-final">
+            JARAMILLO OROZCO
+          </p>
+
+          <p class="fecha-final">
+            28 · 11 · 2026
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         09. PIE DE PÁGINA
+    ========================================== -->
+
+    <footer class="pie">
+
+      <p>
+        GALA CHARRA IMPERIAL
+      </p>
+
+      <span>
+        XV AÑOS · MARIA SAMYRETH
+      </span>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
