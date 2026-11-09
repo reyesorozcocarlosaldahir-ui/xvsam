@@ -1,4 +1,3 @@
-
 /* =====================================================
    GALA CHARRA IMPERIAL
    XV AÑOS DE MARIA SAMYRETH JARAMILLO OROZCO
@@ -112,8 +111,22 @@ const URL_GOOGLE_SCRIPT = "https://script.google.com/macros/s/AKfycbxmsx_YgYKe6j
     // Iniciar efecto de apertura.
     abrirSobre.classList.add("abierto");
 
-    // Intentar reproducir música.
-    iniciarMusica();
+   
+    // Reproducir música desde el toque del usuario.
+    musica.muted = false;
+    musica.volume = 0.35;
+
+    const intentoMusica = musica.play();
+
+    if (intentoMusica) {
+      intentoMusica.catch((error) => {
+        console.warn("Safari bloqueó la música:", error);
+        botonMusica.hidden = false;
+        botonMusica.textContent = "▶";
+        botonMusica.title = "Toca para escuchar música";
+      });
+    }
+
 
     // Esperar la animación del sobre.
     const tiempoApertura =
